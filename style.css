@@ -1,0 +1,17 @@
+/*Style sheet for html project */
+
+*{
+  box-sizing: border-box;
+}
+
+*{
+  container;
+}
+
+
+.container{
+width: 960px;
+padding-right: 30px;
+padding-left: 30px;
+margin: 0 auto;
+}
