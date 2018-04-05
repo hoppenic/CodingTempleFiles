@@ -16,29 +16,13 @@ padding-left: 30px;
 margin: 0 auto;
 }
 
-.newbody{
-color:black;
-font-weight: 400;
-font-size: 16px;
-line-height: 22px;
-font-family: "Open Sans";
-
+body {
+background: white;
+color: black;
 }
 
 
-h1 {
-  color:#45a2da;
-}
-
-h2 {
-  color:#45a2da;
-}
-
-h3 {
-  color:#45a2da;
-}
-
-h4 {
+h1, h2, h3, h4 {
   color:#45a2da;
 }
 
@@ -64,4 +48,8 @@ text-transform: uppercase;
 
 nav{
   text-align: right;
+}
+
+p{
+color: #848484;
 }
