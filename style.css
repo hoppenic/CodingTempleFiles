@@ -36,6 +36,14 @@ header li:hover{
   color: #45a2da;
 }
 
+header li{
+  display: inline-block;
+}
+
+header li a{
+  color:black;
+}
+
 a {
   text-decoration: none;
 }
@@ -46,8 +54,8 @@ h2, h3, h4 {
   text-transform: uppercase;
 }
 
-nav {
-  text-align: right;
+header nav {
+
 }
 
 p {
