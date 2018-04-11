@@ -9,7 +9,7 @@
 }
 
 .container {
-  width: 960px;
+  width: 66vw;
   padding-right: 30px;
   padding-left: 30px;
   margin: 0 auto;
@@ -109,4 +109,24 @@ width: 50%;
   content: "";
   display: table;
   clear: both;
+}
+
+.wraplinks{
+display: block;
+
+}
+
+/*rules for tablets*/
+@media all and (max-width:900px){
+.body-wrapper{
+  background-color: blue;
+}
+
+}
+
+/*rules for phones */
+@media all and (max-width:650px){
+  .body-wrapper{
+    background-color: blue;
+  }
 }
