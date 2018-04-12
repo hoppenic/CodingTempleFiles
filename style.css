@@ -4,9 +4,6 @@
   box-sizing: border-box;
 }
 
-* {
-  container;
-}
 
 .container {
   width: 66vw;
@@ -16,6 +13,7 @@
 }
 
 body {
+  margin-left: 2px;
   background: white;
   color: black;
 }
@@ -26,22 +24,21 @@ h1, h2, h3, h4 {
 
 footer a {
   color: white;
+}
 
-}/*header a:hover {
-  color: #45a2da;
-}*/
 
-header li:hover{
-  box-shadow:  inset 0 3px 0 0 #45a2da;
+header li:hover {
+  box-shadow: inset 0 3px 0 0 #45a2da;
   color: #45a2da;
 }
 
-header li{
+header li {
+
   display: inline-block;
 }
 
-header li a{
-  color:black;
+header li a {
+  color: black;
 }
 
 a {
@@ -54,7 +51,17 @@ h2, h3, h4 {
   text-transform: uppercase;
 }
 
+
+
+
+
+
+
+
+
+
 header nav {
+
 
 }
 
@@ -72,61 +79,89 @@ footer {
   box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.8);
 }
 
-.alt-link{
+.alt-link {
   background-color: black;
 }
 
-.alt-link a{
+.alt-link a {
   color: white;
 }
 
-.col-1-2{
-float: left;
-padding-left: 10px;
-padding-right: 10px;
-width: 50%;
-
+.col-1-2 {
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 50%;
 }
 
-.col-2-3{
+.col-2-3 {
   float: left;
   padding-left: 10px;
   padding-right: 10px;
   width: 66.66%;
-
 }
 
-.col-1-3{
+.col-1-3 {
   float: left;
   padding-left: 10px;
   padding-right: 10px;
   width: 33.33%;
-
 }
 
-.clearfix:after{
-
+.clearfix:after {
   content: "";
   display: table;
   clear: both;
 }
 
-.wraplinks{
-display: block;
+.wraplinks {
+  display: block;
+}
 
+
+/*this is a rule that helps with images when using flex boxes */
+img{
+  display: inline-block;
+    width: 100%;
 }
 
 /*rules for tablets*/
-@media all and (max-width:900px){
-.body-wrapper{
-  background-color: blue;
-}
 
-}
-
-/*rules for phones */
-@media all and (max-width:650px){
-  .body-wrapper{
-    background-color: blue;
+@media all and (max-width:650px) {
+  .body-wrapper {
+    background-color: green;
   }
+}
+
+  /*rules for mobile phones */
+  @media all and (max-width:300px) {
+
+    article.flex{
+      flex-direction: column;
+    }
+    article img {
+      display: none;
+    }
+
+    footer.flex{
+      flex-direction: column;
+    }
+  }
+
+.flex{
+  display: flex;
+}
+
+.half{
+  flex-basis: 50%;
+}
+
+.onethird{
+  flex-basis: 33%;
+}
+
+.twothird{
+flex-basis: 66%;
+
+
 }
